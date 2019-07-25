@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"></meta>
+  <head>
+    <title>Template</title>
+    <script src="../common/src/muse/main.js" main="./src/app.js"></script>
+  	<link rel="stylesheet" href="css/style.css"></link>
+  </head>
+  <body>
+    <div class='spectrum'></div>
+    <div id='lightHolder'>
+    </div>
+    <div id='controlBox'>
+      <div class='controls'>
+        <h2>Temperature Controls</h2>
+        <div>
+          Relative to ground temperature: <input id='relative' type="checkbox">
+        </div>
+        <br>
+        <div>
+          Ambient Temperature: <span id='tempText'>50</span>°
+          <br>
+          <input id='temp' type="range" min="0" max="1" step="0.001">
+        </div>
+        <div>
+          Ground Temperature: <span id='gTempText'>50</span>°
+          <br>
+          <input id='gTemp' type="range" min="0" max="1" step="0.001">
+          </input>
+        </div>
+      </div>
+      <div class='controls'>
+        <h2>Color Drift Controls</h2>
+        <div>
+          Color Drift Amplitude: <span id='driftAmpText'>5</span>%
+          <br>
+          <input id='driftAmp' type="range" min="0" max=".2" step="0.001" value=".05">
+          </input>
+        </div>
+        <div>
+          Color Drift Period: <span id='driftFreqText'>30</span> seconds
+          <br>
+          <input id='driftFreq' type="range" min="0" max="60" step="0.001">
+          </input>
+        </div>
+      </div>
+      <div class='controls'>
+        <h2>Intensity Controls</h2>
+        <div>
+          Intensity Swell Amplitude: <span id='intAmpText'>50</span>%
+          <br>
+          <input id='intAmp' type="range" min="0" max=".5" step="0.001">
+          </input>
+        </div>
+        <div>
+          Intensity Swell Period: <span id='intFreqText'>15</span> seconds
+          <br>
+          <input id='intFreq' type="range" min="0.0001" max="30" step="0.001">
+          </input>
+        </div>
+      </div>
+      <div class='controls'>
+        <h2>Rock Timing Controls</h2>
+        <div>
+          Rock 2 Timing Offset: <span id='offText2'>25</span>% out of phase
+          <br>
+          <input id='offset2' type="range" min="0" max="3.14159" step="0.0001" value=".785">
+          </input>
+        </div>
+        <div>
+          Rock 3 Timing Offset: <span id='offText3'>50</span>% out of phase
+          <br>
+          <input id='offset3' type="range" min="0" max="3.14159" step="0.0001">
+          </input>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

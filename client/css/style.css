@@ -1,0 +1,104 @@
+/*@font-face {
+    font-family: roboto;
+}*/
+
+html, body {
+	margin: 0;
+	color: #ddd;
+	font-family: sans-serif;
+	font-weight: lighter;
+	width:100%;
+	height:100%;
+	/* text-align: center; */
+  z-index: -100;
+}
+
+body {
+  background-color: #2a2a2a;
+}
+
+#lightHolder {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.tower {
+	position: relative;
+  width: 90vw;
+	height: 10vh;
+	margin: 5vw;
+	line-height: 10vh;
+	--gradient: linear-gradient(to right, rgb(255,0,0), rgb(0,0,255));
+}
+
+.swatch {
+	position: absolute;
+	display: inline-block;
+	width: 10vh;
+	height: 10vh;
+	left: 0;
+	border-radius: 1vh;
+	background-color: #fff;
+	z-index: -100;
+	/* transition: background-color .1s; */
+}
+
+.spectrum {
+	display: inline-block;
+	position: absolute;
+	left: 10vh;
+	width: 70vw;
+	height: 4vh;
+	margin-left: 5vw;
+	vertical-align: top;
+	z-index: 0;
+	background: var(--gradient);
+}
+
+.marker {
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 4vh;
+	width: 1px;
+	/* background-color: #000; */
+	border: 2px solid #000;
+}
+
+.marker > div {
+	position: absolute;
+	left: -3px;
+	top: -6px;
+	width:6px;
+	height: 6px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #000;
+}
+
+.controls {
+	margin: .5em;
+	margin-left: 5vw;
+	background-color: #555;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+#controlBox {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	top: calc(3 * (10vh + 5vw));
+	height: calc(100vh - 3 * (10vh + 5vw));
+	left: 0;
+	width: 100vw;
+}
+
+h2 {
+	margin-top: .1em;
+}
+
+input {
+	margin-left: 5vw;
+}

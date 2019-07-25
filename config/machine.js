@@ -5,9 +5,9 @@ exports.config = {
       password: 'template!',
       domainName: 'template.net',
     },*/
-    wiredRouter: {
-      domainName: 'waterwall.net',
-    },
+    // wiredRouter: {
+    //   domainName: 'waterwall.net',
+    // },
     autostart: true,
     gitWatch: true,
     // softShutdown: {
